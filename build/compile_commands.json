@@ -1,12 +1,32 @@
 [
 {
   "directory": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/common",
-  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/common.dir/complex.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/common/complex.cpp",
+  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/common -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/common -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/common.dir/complex.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/common/complex.cpp",
   "file": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/common/complex.cpp"
 },
 {
   "directory": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/apps",
-  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/common  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/main.dir/main.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/apps/main.cpp",
+  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/apps -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/apps -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/common  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/main.dir/main.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/apps/main.cpp",
   "file": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/apps/main.cpp"
+},
+{
+  "directory": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests",
+  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/test_all.dir/tests_all.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/tests_all.cpp",
+  "file": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/tests_all.cpp"
+},
+{
+  "directory": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests",
+  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/test_all.dir/unit/common/test_complex.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/unit/common/test_complex.cpp",
+  "file": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/unit/common/test_complex.cpp"
+},
+{
+  "directory": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests",
+  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/test_common.dir/tests_all.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/tests_all.cpp",
+  "file": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/tests_all.cpp"
+},
+{
+  "directory": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests",
+  "command": "/usr/bin/c++    -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src -I/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/build  -std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type -g -O0 -DDEBUG -fsanitize=address -fno-omit-frame-pointer   -o CMakeFiles/test_common.dir/unit/common/test_complex.cpp.o -c /home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/unit/common/test_complex.cpp",
+  "file": "/home/cedric/Documents/Cours/2017-2018/BScv/ComputerScience/Solution/Demo/src/tests/unit/common/test_complex.cpp"
 }
 ]
