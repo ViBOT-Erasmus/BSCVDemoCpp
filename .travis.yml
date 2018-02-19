@@ -21,4 +21,4 @@ install:
     - cmake ../src && make -j
     - cd ../bin
 
-script: ./tests_all
+script: ./test_all
