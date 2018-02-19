@@ -1,7 +1,7 @@
 #ifndef Complex
 #define Complex
 
-#include <math.h>
+#include <cmath>
 
 
 
