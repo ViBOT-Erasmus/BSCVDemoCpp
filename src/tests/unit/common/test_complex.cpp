@@ -1,5 +1,5 @@
 // Include our own code
-#include <common/complex.h>
+#include <common/complex.hpp>
 
 // Include the gtest library
 #include <gtest/gtest.h>
@@ -9,6 +9,6 @@
 // * The test case name 
 // * The test name
 TEST(ComplexBuild, DefaultVal) {
-    Complex a;
+    complex a;
     GTEST_ASSERT_EQ(a.get_real(), 0);
 }

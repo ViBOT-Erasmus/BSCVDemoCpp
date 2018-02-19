@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "complex.h"
+#include "complex.hpp"
 
 int main() {
 
