@@ -1,14 +1,20 @@
 dist: trusty
-sudo: false
+sudo: true
 
 addons:
   apt:
     packages:
       - cmake
+      - libgtest-dev
 
 language: cpp
 
 install:
+    - cd /usr/src/gtest
+    - sudo cmake CMakeLists.txt
+    - sudo make
+    - sudo cp *.a /usr/lib
+    - cd $TRAVIS_BUILD_DIR
     - rm -rf build
     - mkdir build
     - cd build
