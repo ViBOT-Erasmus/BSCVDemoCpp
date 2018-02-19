@@ -1,0 +1,17 @@
+dist: trusty
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - cmake
+
+language: cpp
+
+install:
+    - mkdir build
+    - cd build
+    - cmake ../src && make -j
+    - cd ../bin
+
+script: ./tests_all
