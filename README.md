@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/clemaitre58/DemoCpp1718.svg?branch=master)](https://travis-ci.org/clemaitre58/DemoCpp1718)
+
 # CMake-skeleton
 
 ## Compilation
-
+za
 * Create a build folder:
 
 `mkdir build`
