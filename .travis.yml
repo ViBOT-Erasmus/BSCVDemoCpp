@@ -9,8 +9,8 @@ addons:
 
 language: cpp
 
-before_install:
-    - pip install --user cpp-coveralls
+#before_install:
+    #    - pip install --user cpp-coveralls
 
 install:
     - cd /usr/src/gtest
@@ -27,5 +27,5 @@ script:
     - ./test_all
 
 after_success:
-    - coveralls --root . -E ".*gtest.*" -E ".*CMakeFile*CMakeFiless."
-
+    # - coveralls --root . -E ".*gtest.*" -E ".*CMakeFile*CMakeFiless."
+    - bash <(curl -s https://codecov.io/bash)
