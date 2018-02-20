@@ -15,7 +15,6 @@ install:
     - sudo make
     - sudo cp *.a /usr/lib
     - cd $TRAVIS_BUILD_DIR
-    - rm -rf build
     - mkdir build
     - cd build
     - cmake ../src && make -j
