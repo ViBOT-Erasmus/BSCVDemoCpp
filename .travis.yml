@@ -6,6 +6,7 @@ addons:
     packages:
       - cmake
       - libgtest-dev
+      - lcov
 
 language: cpp
 
@@ -20,12 +21,16 @@ install:
     - cd $TRAVIS_BUILD_DIR
     - mkdir build
     - cd build
-    - cmake ../src && make -j
+    - cmake ../src && make -j && make main_coverage
     - cd ../bin
 
 script: 
     - ./test_all
 
 after_success:
-    # - coveralls --root . -E ".*gtest.*" -E ".*CMakeFile*CMakeFiless."
-    - bash <(curl -s https://codecov.io/bash)
+    - cd ${TRAVIS_BUILD_DIR}/build
+    - lcov --directory . --capture --output-file coverage.info # capture coverage info
+    - lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out system
+    - lcov --list coverage.info #debug info
+    # Uploading report to CodeCov
+    - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"

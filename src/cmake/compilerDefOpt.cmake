@@ -4,7 +4,7 @@
 ###### Compiler options
 
 set (CMAKE_CXX_FLAGS                "-std=c++11 -Wextra -Wall -Wno-delete-non-virtual-dtor -Werror=return-type")
-set (CMAKE_CXX_FLAGS_DEBUG          "-g -O0 -DDEBUG")
+set (CMAKE_CXX_FLAGS_DEBUG          "-g -O0 -DDEBUG -fprofile-arcs -ftest-coverage")
 set (CMAKE_CXX_FLAGS_RELEASE        "-O3")
 
 if(WARNINGS_AS_ERRORS)
