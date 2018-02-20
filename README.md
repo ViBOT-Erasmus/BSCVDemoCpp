@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/ViBOT-Erasmus/BSCVDemoCpp1718.svg?branch=master)](https://travis-ci.org/ViBOT-Erasmus/BSCVDemoCpp1718) [![codecov](https://codecov.io/gh/ViBOT-Erasmus/BSCVDemoCpp1718/branch/master/graph/badge.svg)](https://codecov.io/gh/ViBOT-Erasmus/BSCVDemoCpp1718)
 
 # CMake-skeleton
 
