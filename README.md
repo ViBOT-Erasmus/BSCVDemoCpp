@@ -5,8 +5,7 @@
 # CMake-skeleton
 
 ## Compilation
-za
-* Create a build folder:
+ Create a build folder:
 
 `mkdir build`
 
