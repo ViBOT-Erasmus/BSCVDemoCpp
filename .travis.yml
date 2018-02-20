@@ -9,9 +9,12 @@ addons:
 
 language: cpp
 
+before_install:
+    - pip install --user cpp-coveralls
+
 install:
     - cd /usr/src/gtest
-    - sudo cmake CMakeLists.txt
+    - sudo cmake CMakeLists.txt -DCOVERAGE=1
     - sudo make
     - sudo cp *.a /usr/lib
     - cd $TRAVIS_BUILD_DIR
@@ -20,4 +23,9 @@ install:
     - cmake ../src && make -j
     - cd ../bin
 
-script: ./test_all
+script: 
+    - ./test_all
+
+after_success:
+    - coveralls --root . -E ".*gtest.*" -E ".*CMakeFile*CMakeFiless."
+
