@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.org/clemaitre58/DemoCpp1718.svg?branch=master)](https://travis-ci.org/clemaitre58/DemoCpp1718)
-
-
 [![codecov](https://codecov.io/gh/clemaitre58/DemoCpp1718/branch/master/graph/badge.svg)](https://codecov.io/gh/clemaitre58/DemoCpp1718)
 
 
