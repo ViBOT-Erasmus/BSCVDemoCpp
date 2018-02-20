@@ -21,7 +21,7 @@ install:
     - cd $TRAVIS_BUILD_DIR
     - mkdir build
     - cd build
-    - cmake -DCOVERAGE=1 ../src && make -j && make main_coverage
+    - cmak -DCMAKE_BUILD_TYPE=Debug ../src && make -j && make main_coverage
     - cd ../bin
 
 script: 
