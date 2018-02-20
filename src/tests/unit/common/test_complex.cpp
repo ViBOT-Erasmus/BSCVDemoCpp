@@ -1,6 +1,6 @@
 // Include our own code
 #include <common/complex.hpp>
-
+#include <cmath>
 // Include the gtest library
 #include <gtest/gtest.h>
 
@@ -9,6 +9,10 @@
 // * The test case name 
 // * The test name
 TEST(ComplexBuild, DefaultVal) {
-    complex a;
+    float x = 2;
+	float y = 2;
+	complex a;
+	complex b(x,y);
     GTEST_ASSERT_EQ(a.get_real(), 0);
+    ASSERT_FLOAT_EQ(b.get_mod(), std::sqrt(8));
 }
