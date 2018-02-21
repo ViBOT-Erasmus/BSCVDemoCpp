@@ -4,6 +4,7 @@
 #include <cmath>
 
 
+#define PI 3.14159265
 
 class complex{
 	// Member variable
@@ -15,6 +16,7 @@ class complex{
 		// Member functions and methods
 		float modulus();
 		float arg();
+
 	public:
 		complex();
 		complex(float &, float &);
