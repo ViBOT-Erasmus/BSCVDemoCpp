@@ -15,4 +15,8 @@ TEST(ComplexBuild, DefaultVal) {
 	complex b(x,y);
     GTEST_ASSERT_EQ(a.get_real(), 0);
     ASSERT_FLOAT_EQ(b.get_mod(), std::sqrt(8));
+    ASSERT_FLOAT_EQ(b.get_arg(), std::atan(1));
+
+	b.clear_real();
+    ASSERT_FLOAT_EQ(0, 0);
 }

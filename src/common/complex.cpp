@@ -22,7 +22,24 @@ float complex::modulus(){
 }
 
 float complex::arg(){
-	return atan(imag/real);
+	float theta = 0.0;
+	
+	if( real != 0)
+	{
+		theta = std::atan(imag/real);
+		if(real < 0){
+			theta += PI;
+		}
+	}	
+	else{
+		if(imag> 0){
+			theta = PI/2;
+		}
+		if(imag < 0){
+			theta = PI/2 + PI;
+		}
+	}	
+	return theta;
 }
 
 void complex::set_real(float r){
@@ -48,4 +65,8 @@ float complex::get_arg(){
 float complex::get_mod(){
 	mod = modulus();
 	return mod;
+}
+
+void complex::clear_real(){
+	real = 0.0;
 }

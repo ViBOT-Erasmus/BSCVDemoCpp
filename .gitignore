@@ -48,3 +48,6 @@ build-*
 
 # Ctags
 src/tags
+
+# YCMgenerator file
+.ycm_extra_conf.py
