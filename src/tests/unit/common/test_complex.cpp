@@ -16,7 +16,8 @@ TEST(ComplexBuild, DefaultVal) {
     GTEST_ASSERT_EQ(a.get_real(), 0);
     ASSERT_FLOAT_EQ(b.get_mod(), std::sqrt(8));
     ASSERT_FLOAT_EQ(b.get_arg(), std::atan(1));
-
+	b.set_real(-2.0f);
+    ASSERT_FLOAT_EQ(b.get_arg(), std::atan(-1)+PI);
 	b.clear_real();
     ASSERT_FLOAT_EQ(0, 0);
 }
