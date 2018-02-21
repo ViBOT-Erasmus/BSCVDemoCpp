@@ -35,7 +35,7 @@ float complex::arg(){
 		if(imag> 0){
 			theta = PI/2;
 		}
-		if(imag > 0){
+		if(imag < 0){
 			theta = PI/2 + PI;
 		}
 	}	
