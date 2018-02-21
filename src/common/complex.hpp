@@ -24,6 +24,7 @@ class complex{
 		float get_imag();
 		float get_mod();
 		float get_arg();
+		void clear_real();
 };
 #endif /* ifndef Complex */
 

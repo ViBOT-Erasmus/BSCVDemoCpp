@@ -49,3 +49,7 @@ float complex::get_mod(){
 	mod = modulus();
 	return mod;
 }
+
+void complex::clear_real(){
+	real = 0.0;
+}
