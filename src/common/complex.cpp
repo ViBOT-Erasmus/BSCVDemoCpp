@@ -48,11 +48,11 @@ void complex::set_real(float r){
 void complex::set_imag(float i){
 		imag = i;
 }
-float complex::get_real(){
+float complex::get_real() const{
 	return real;
 }
 
-float complex::get_imag(){
+float complex::get_imag() const{
 	return imag;
 
 }
@@ -72,7 +72,7 @@ void complex::clear_real(){
 }
 
 
-complex operator+(complex a, complex b){
+complex operator+(const complex & a, const complex & b){
 	complex result;
 	result.set_real(a.get_real() + b.get_real());
 	result.set_imag(a.get_imag() + b.get_imag());

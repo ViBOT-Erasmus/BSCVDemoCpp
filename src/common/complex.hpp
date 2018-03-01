@@ -22,14 +22,14 @@ class complex{
 		complex(float &, float &);
 		void set_real(float);
 		void set_imag(float);
-		float get_real();
-		float get_imag();
+		float get_real() const;
+		float get_imag() const;
 		float get_mod();
 		float get_arg();
 		void clear_real();
 };
 
-complex operator+(complex, complex);
+complex operator+(const complex &, const complex &);
 #endif /* ifndef Complex */
 
 
