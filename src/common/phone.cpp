@@ -1,6 +1,8 @@
 #include "phone.hpp"
 
 phone::phone(){
+	year = 0;
+	value = 0;
 }
 
 
