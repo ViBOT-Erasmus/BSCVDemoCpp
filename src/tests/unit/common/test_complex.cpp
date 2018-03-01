@@ -21,3 +21,40 @@ TEST(ComplexBuild, DefaultVal) {
 	b.clear_real();
     ASSERT_FLOAT_EQ(0, 0);
 }
+TEST(ComplexMod, DefaultTest) {
+    float x = 2;
+	float y = 2;
+	complex b(x, y);
+    ASSERT_FLOAT_EQ(b.get_mod(), std::sqrt(8));
+}
+TEST(ComplexArg, AnglePos) {
+    float x = 2;
+	float y = 2;
+	complex b(x, y);
+    ASSERT_FLOAT_EQ(b.get_arg(), std::atan(1));
+}
+TEST(ComplexArg, AngleNeg) {
+    float x = -2;
+	float y = 2;
+	complex b(x, y);
+    ASSERT_FLOAT_EQ(b.get_arg(), std::atan(-1)+PI);
+}
+TEST(ComplexClear, Default) {
+    float x = -2;
+	float y = 2;
+	complex b(x, y);
+	b.clear_real();
+    ASSERT_FLOAT_EQ(b.get_real(), 0.0);
+}
+
+TEST(ComplexAddOperator, Default) {
+    float x = 2;
+	float y = 2;
+	complex b(x, y);
+	complex a(x, y);
+	complex res;
+	res = a + b;
+
+    ASSERT_FLOAT_EQ(res.get_real(), 4);
+    ASSERT_FLOAT_EQ(res.get_imag(), 4);
+}
