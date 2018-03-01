@@ -70,3 +70,12 @@ float complex::get_mod(){
 void complex::clear_real(){
 	real = 0.0;
 }
+
+
+complex operator+(complex a, complex b){
+	complex result;
+	result.set_real(a.get_real() + b.get_real());
+	result.set_imag(a.get_imag() + b.get_imag());
+
+	return result;
+}

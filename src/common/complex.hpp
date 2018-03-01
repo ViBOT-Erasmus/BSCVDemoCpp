@@ -28,6 +28,8 @@ class complex{
 		float get_arg();
 		void clear_real();
 };
+
+complex operator+(complex, complex);
 #endif /* ifndef Complex */
 
 
