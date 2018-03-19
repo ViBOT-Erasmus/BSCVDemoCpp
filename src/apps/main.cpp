@@ -3,11 +3,14 @@
 #include "../common/complex.hpp"
 #include "../common/phone.hpp"
 #include "../common/smartphone.hpp"
+#include "../common/point.hpp"
 
 
 int main() {
 
-	phone my_phone;
+	Point my_point(12, 0);
+
+/*	phone my_phone;
 
 	my_phone.set_value(150);
 	std::cout << my_phone.get_value() << "\n";
@@ -51,6 +54,6 @@ int main() {
 	std::cout << "Modulus of my_compex2 obj : " << m << "\n";
 	
 	float n = my_complex2.get_arg();
-	std::cout << "Arg of my_compex2 obj : " << n << "\n";
+	std::cout << "Arg of my_compex2 obj : " << n << "\n";*/
     return 0;
 }
