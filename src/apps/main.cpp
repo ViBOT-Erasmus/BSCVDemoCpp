@@ -1,3 +1,4 @@
+// Copyright 2016 Guillaume Lemaitre, Cedric Lemaitre
 #include <iostream>
 
 #include "../common/complex.hpp"
@@ -5,10 +6,8 @@
 #include "../common/smartphone.hpp"
 #include "../common/point.hpp"
 
-
 int main() {
-
-	Point my_point(12, 0);
+  Point my_point(12, 0);
 
 /*	phone my_phone;
 
