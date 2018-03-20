@@ -4,7 +4,7 @@
 #define SRC_COMMON_SMARTPHONE_HPP_
 
 #include <string>
-#include "smartphone.hpp"
+#include "phone.hpp"
 
 class Smartphone: public phone {
  public:
