@@ -14,7 +14,7 @@ language: cpp
     #    - pip install --user cpp-coveralls
 
 install:
-    - pip install cpplint
+    - sudo pip install cpplint
     - cpplint --recursive src
     - cd /usr/src/gtest
     - sudo cmake CMakeLists.txt -DCOVERAGE=1
