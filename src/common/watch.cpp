@@ -1,11 +1,12 @@
-#include "watch.hpp"
+// Copyright 2018 Sadiq
 #include <iostream>
 #include <string>
 
-Watch::Watch(std::string name, int number)
-{
-	brand = name;
-	serial_number = number;
+#include "watch.hpp"
+
+Watch::Watch(std::string name, int number) {
+    brand = name;
+    serial_number = number;
 }
 
 

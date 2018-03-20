@@ -1,23 +1,15 @@
-#ifndef POINT_H
-#define POINT_H
+//  Copyright 2018 Cedric Lemaitre
+#ifndef SRC_COMMON_POINT_HPP_
+#define SRC_COMMON_POINT_HPP_
 
 
-class Point{
-
-	public :
-		double x;
-		double y;
-		Point(double, double);
+class Point {
+ public :
+  double x;
+  double y;
+  Point(double, double);
 };
-#endif /* ifndef POINT_H
+#endif  // SRC_COMMON_POINT_HPP_
 
 
-class Point{
 
-	private :
-		double x;
-		double y;
-
-	public :
-		Point(double, double);
-}; */
