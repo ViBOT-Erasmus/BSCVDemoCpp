@@ -1,26 +1,20 @@
-#ifndef PHONE_HPP
-#define PHONE_HPP
+// Copyright 2018 Cedric Lemaitre
 
-
+#ifndef SRC_COMMON_PHONE_HPP_
+#define SRC_COMMON_PHONE_HPP_
 
 
 class phone{
-	public:
-		phone();
-		void set_value(int);
-		int  get_value();
-		void set_year(int);
-		int  get_year();
-
-	private:
-		int year;
-		int value;
+ public:
+    phone();
+    void set_value(int);
+    int  get_value();
+    void set_year(int);
+    int  get_year();
+ private:
+    int year;
+    int value;
 };
 
 
-#endif /* ifndef PHONE_HPP
-
-class phone{
-}
-
- */
+#endif  //  SRC_COMMON_PHONE_HPP_

@@ -1,24 +1,18 @@
-#ifndef SMARTPHONE_CPP
-#define SMARTPHONE_CPP
+//  Copyright 2018 Cédric Lemaitre
 
+#ifndef SRC_COMMON_SMARTPHONE_HPP_
+#define SRC_COMMON_SMARTPHONE_HPP_
 
-#include "phone.hpp"
 #include <string>
+#include "smartphone.hpp"
 
-class Smartphone: public phone{
-	public:
-		Smartphone();
-		void set_os(std::string);
-		std::string get_os();
-	private:
-		std::string os;
+class Smartphone: public phone {
+ public:
+  Smartphone();
+  void set_os(std::string);
+  std::string get_os();
+ private:
+  std::string os;
 };
 
-#endif /* ifndef SMARTPHONE_CPP
-
-
-#include "phone.hpp"
-
-class Smartphone:phone{
-	public :
-		void get_os() */
+#endif  //  SRC_COMMON_SMARTPHONE_HPP_
