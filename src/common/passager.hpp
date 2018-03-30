@@ -11,31 +11,37 @@ class Passager {
  public:
      /// Constructor with in parameter all data which should affected to the
      // menber variables
-     Passager(
+     Passager(bool,
+             int,
              bool,
              int,
+             int,
+             int,
+             int,
+             std::string,
+             std::string,
              std::string,
              bool,
-             int,
-             int,
-             int,
              std::string,
-             double,
              std::string,
-             std::string);
-
+             bool,
+             bool);
  private:
     bool survived;  ///< survived or not
     int pclass;  ///< range class
-    std::string name;  ///< full name and title CSV give unconsistent things
     bool sex;  ///< male true, female 0
     int age;
     int slbsp;  ///< see owner for wahit for
     int parch;  ///< see owner for wahit for
-    std::string ticket;  ///< id for ticket heterogenous value
-    double fare;
-    std::string cabin;  ///< number cabin
+    int fare;
     std::string embarked;
+    std::string type_class;
+    std::string who;
+    bool adult_male;
+    std::string deck;
+    std::string embark_town;
+    bool alive;
+    bool alone;
 };
 #endif  //  SRC_COMMON_PASSAGER_HPP_
 
