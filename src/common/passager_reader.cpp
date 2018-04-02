@@ -67,7 +67,43 @@ void PassagerReader::parse_line(std::string line) {
                 fare = atoi(cell.c_str());
                 count ++;
                 break; 
+            case 7:
+                embarked = cell;
+                count ++;
+                break; 
+            case 8:
+                type_class = cell;
+                count ++;
+                break; 
+            case 9:
+                who = cell;
+                count ++;
+                break; 
+            case 10:
+                if (cell == "1") adult_male= true;
+                else adult_male = false;
+                count ++;
+                break;
+            case 11:
+                deck = cell;
+                count ++;
+                break;
+            case 12:
+                embark_town = cell;
+                count ++;
+                break;
+            case 13:
+                if (cell == "yes") alive = true;
+                else alive = false;
+                count ++;
+                break;
+            case 14:
+                if (cell == "1") alone = true;
+                else alone = false;
+                count ++;
+                break;
             default:
+                std::cout << "Warning : value of count in [0, 14]\n";
                 
         }
     }
