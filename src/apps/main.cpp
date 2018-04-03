@@ -5,11 +5,39 @@
 #include "../common/phone.hpp"
 #include "../common/smartphone.hpp"
 #include "../common/point.hpp"
+#include "../common/ex_template.hpp"
+
 
 int main() {
-  Point my_point(12, 0);
+    Point my_point(12, 0);
 
-/*	phone my_phone;
+    int i = 12;
+    double d = 12.4;
+    std::string s = "Test";
+
+    print_data(i);
+    print_data(d);
+    print_data(s);
+
+    double t1_i = 5.0;
+    double t2_j = 6.13;
+    double res = Add_T(t1_i, t2_j);
+    std::cout << res << "\n";
+
+    float ar = 3.0;
+    float ai = 2.7;
+    float br = 4.0;
+    float bi = 9.6;
+
+    complex a(ar, ai);
+    complex b(br, bi);
+    complex c;
+
+    c = Add_T(a, b);
+
+    std::cout << c.get_real() << "\n";
+    std::cout << c.get_imag() << "\n";
+    /*	phone my_phone;
 
 	my_phone.set_value(150);
 	std::cout << my_phone.get_value() << "\n";

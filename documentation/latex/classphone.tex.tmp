@@ -1,0 +1,27 @@
+\hypertarget{classphone}{}\section{phone Class Reference}
+\label{classphone}\index{phone@{phone}}
+
+
+Inheritance diagram for phone\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classphone_ad4ed252e136065bbf9a0c850dc381305}\label{classphone_ad4ed252e136065bbf9a0c850dc381305}} 
+void {\bfseries set\+\_\+value} (int)
+\item 
+\mbox{\Hypertarget{classphone_adc849d589fde87be6d01f760aab04951}\label{classphone_adc849d589fde87be6d01f760aab04951}} 
+int {\bfseries get\+\_\+value} ()
+\item 
+\mbox{\Hypertarget{classphone_a7fc90524dba076e551b26112e8b27662}\label{classphone_a7fc90524dba076e551b26112e8b27662}} 
+void {\bfseries set\+\_\+year} (int)
+\item 
+\mbox{\Hypertarget{classphone_aec589a3a33021a0c049d0a82afe4e479}\label{classphone_aec589a3a33021a0c049d0a82afe4e479}} 
+int {\bfseries get\+\_\+year} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/cedric/\+Documents/\+Cours/2017-\/2018/\+B\+Scv/\+Computer\+Science/\+Solution/\+B\+S\+C\+V\+Demo\+Cpp1718/src/common/phone.\+hpp\item 
+/home/cedric/\+Documents/\+Cours/2017-\/2018/\+B\+Scv/\+Computer\+Science/\+Solution/\+B\+S\+C\+V\+Demo\+Cpp1718/src/common/phone.\+cpp\end{DoxyCompactItemize}
