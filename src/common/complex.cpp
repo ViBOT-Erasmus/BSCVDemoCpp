@@ -120,3 +120,42 @@ complex operator*(const complex & a, const complex & b) {
 
     return result;
 }  // operator*
+
+/// overloading "/" operator for complex
+//  a - b <=> (arbr+aibi + i(aibr-biar)) / (br²+bi²)
+//  parameters :
+//      a : operande number 1
+//      b : operande number 2
+//
+//  return :
+//      comlex : result of multiplication
+complex operator/(const complex & a, const complex & b) {
+    complex result;
+    result.set_real(
+            ((a.get_real() * b.get_real()) -
+            (a.get_imag() * b.get_imag()))
+            / (pow(b.get_real(), 2)+ pow(b.get_imag(), 2)));
+
+    result.set_imag(
+            ((a.get_real() * b.get_imag()) +
+            (a.get_imag() * b.get_real()))
+            / (pow(b.get_real(), 2)+ pow(b.get_imag(), 2)));
+
+    return result;
+}  // operator/
+
+/// overloading "<<" operator for complex
+//  allow to display complex at screen
+//  parameters :
+//      os : stream where is the current data
+//      c : complex number object
+//
+//  return :
+//      ostream stream where place the result
+std::ostream & operator<<(std::ostream & os, const complex & c) {
+    if (c.get_imag() > 0) {
+        return os << c.get_real() << "+i" << c.get_imag();
+    } else {
+        return os << c.get_real() << "-i" << -1 * c.get_imag();
+    }
+}  //  operator<<

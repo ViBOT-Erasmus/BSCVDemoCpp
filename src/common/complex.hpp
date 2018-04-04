@@ -5,6 +5,7 @@
 
 #include <cmath>
 
+#include <iostream>
 
 #define PI 3.14159265
 
@@ -26,9 +27,11 @@ class complex {
         float get_mod();
         float get_arg();
         void clear_real();
-};  //  Class Comlpex
+};  //  Class Complex
 
 complex operator+(const complex &, const complex &);
 complex operator-(const complex &, const complex &);
 complex operator*(const complex &, const complex &);
+complex operator/(const complex &, const complex &);
+std::ostream & operator<<(std::ostream &, const complex &);
 #endif  //  SRC_COMMON_COMPLEX_HPP_
