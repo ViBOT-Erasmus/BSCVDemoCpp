@@ -104,8 +104,8 @@ TEST(ComplexDivOperator, Default) {
     complex res;
     res = a / b;
 
-    ASSERT_FLOAT_EQ(res.get_real(), float(27)/float(74));
-    ASSERT_FLOAT_EQ(res.get_imag(), float(51)/float(74));
+    ASSERT_FLOAT_EQ(res.get_real(), 27.0/74.0);
+    ASSERT_FLOAT_EQ(res.get_imag(), 51.0/74.0);
 }  //  ComplexDivOperator
 
 /// Test overloading opertor* for floating value
