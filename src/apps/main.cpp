@@ -9,15 +9,28 @@
 
 
 int main() {
-    Point my_point(12, 0);
+    // Point my_point(12, 0);
+    // float ar = 1.27;
+    // float ai = 2.0;
+    // complex a(ar, ai);
 
-    int i = 12;
-    double d = 12.4;
-    std::string s = "Test";
+    // float br = 1.45;
+    // float bi = 2.18;
+    // complex b(br, bi);
 
-    print_data(i);
-    print_data(d);
-    print_data(s);
+    // complex cres;
+
+    // cres = a + b;
+
+    // std::cout << cres.get_real() << " \n \n";
+
+    // int i = 12;
+    // double d = 12.4;
+    // std::string s = "Test";
+
+    // print_data(i);
+    // print_data(d);
+    // print_data(s);
 
     double t1_i = 5.0;
     double t2_j = 6.13;

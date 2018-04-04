@@ -26,7 +26,9 @@ class complex {
         float get_mod();
         float get_arg();
         void clear_real();
-};
+};  //  Class Comlpex
 
 complex operator+(const complex &, const complex &);
+complex operator-(const complex &, const complex &);
+complex operator*(const complex &, const complex &);
 #endif  //  SRC_COMMON_COMPLEX_HPP_

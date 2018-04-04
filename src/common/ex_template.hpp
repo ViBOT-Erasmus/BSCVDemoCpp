@@ -10,7 +10,7 @@
 template<typename T>
 void print_data(T value) {
     std::cout << "The value is :" << value << "\n";
-}
+}  // print_data
 
 /// Template to add 2 operandes
 //
@@ -26,6 +26,6 @@ T Add_T(T n1, T n2) {
     T result;
     result = n1 + n2;
     return result;
-}
+}  // Add_T
 
 #endif  //  SRC_COMMON_EX_TEMPLATE_HPP_

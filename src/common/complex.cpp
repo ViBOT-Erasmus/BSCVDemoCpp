@@ -69,11 +69,54 @@ void complex::clear_real() {
     real = 0.0;
 }
 
-
+/// overloading "+" operator for complex
+//  a + b <=> ar+br + i(ai+bi)
+//  parameters :
+//      a : operande number 1
+//      b : operande number 2
+//
+//  return :
+//      comlex : result of addititon
 complex operator+(const complex & a, const complex & b) {
     complex result;
     result.set_real(a.get_real() + b.get_real());
     result.set_imag(a.get_imag() + b.get_imag());
 
     return result;
-}
+}  //  operator+
+
+
+/// overloading "-" operator for complex
+//  a - b <=> ar-br + i(ai-bi)
+//  parameters :
+//      a : operande number 1
+//      b : operande number 2
+//
+//  return :
+//      comlex : result of substraction
+complex operator-(const complex & a, const complex & b) {
+    complex result;
+    result.set_real(a.get_real() - b.get_real());
+    result.set_imag(a.get_imag() - b.get_imag());
+
+    return result;
+}  // operator-
+
+/// overloading "*" operator for complex
+//  a - b <=> arbr-aibi + i(aibr+biar)
+//  parameters :
+//      a : operande number 1
+//      b : operande number 2
+//
+//  return :
+//      comlex : result of multiplication
+complex operator*(const complex & a, const complex & b) {
+    complex result;
+    result.set_real((a.get_real() * b.get_real()) -
+            (a.get_imag() * b.get_imag()));
+
+    result.set_imag((a.get_real() * b.get_imag()) +
+            (a.get_imag() * b.get_real()));
+
+    return result;
+}  // operator*
