@@ -91,6 +91,23 @@ TEST(ComplexMulOperator, Default) {
     ASSERT_FLOAT_EQ(res.get_real(), 13);
     ASSERT_FLOAT_EQ(res.get_imag(), 11);
 }  //  ComplexMulOperator
+
+/// Test overloading opertor/
+TEST(ComplexDivOperator, Default) {
+    float ar = 6.0;
+    float ai = 3.0;
+    float br = 7.0;
+    float bi = -5.0;
+
+    complex b(br, bi);
+    complex a(ar, ai);
+    complex res;
+    res = a / b;
+
+    ASSERT_FLOAT_EQ(res.get_real(), float(27)/float(74));
+    ASSERT_FLOAT_EQ(res.get_imag(), float(51)/float(74));
+}  //  ComplexDivOperator
+
 /// Test overloading opertor* for floating value
 TEST(ComplexOstreamOperator, FloatingVal) {
     float ar = -2.1;
@@ -106,6 +123,7 @@ TEST(ComplexOstreamOperator, FloatingVal) {
 
     ASSERT_STREQ(str_buf.c_str(), str_a.c_str());
 }  //  ComplexMulOperator for floating value
+
 /// Test overloading opertor* for int value
 TEST(ComplexOstreamOperator, IntegerVal) {
     float ar = -2.0;
@@ -121,6 +139,7 @@ TEST(ComplexOstreamOperator, IntegerVal) {
 
     ASSERT_STREQ(str_buf.c_str(), str_a.c_str());
 }  //  ComplexMulOperator for floating value
+
 /// Test overloading opertor* for int value
 TEST(ComplexOstreamOperator, NegativeImag) {
     float ar = -2.0;

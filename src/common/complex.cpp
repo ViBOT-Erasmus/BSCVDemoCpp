@@ -132,13 +132,13 @@ complex operator*(const complex & a, const complex & b) {
 complex operator/(const complex & a, const complex & b) {
     complex result;
     result.set_real(
-            ((a.get_real() * b.get_real()) -
+            ((a.get_real() * b.get_real()) +
             (a.get_imag() * b.get_imag()))
             / (pow(b.get_real(), 2)+ pow(b.get_imag(), 2)));
 
     result.set_imag(
-            ((a.get_real() * b.get_imag()) +
-            (a.get_imag() * b.get_real()))
+            ((a.get_imag() * b.get_real()) -
+            (a.get_real() * b.get_imag()))
             / (pow(b.get_real(), 2)+ pow(b.get_imag(), 2)));
 
     return result;
