@@ -26,7 +26,7 @@ class Passager {
              std::string,
              bool,
              bool);
- private:
+// private:
     bool survived;  ///< survived or not
     int pclass;  ///< range class
     bool sex;  ///< male true, female 0

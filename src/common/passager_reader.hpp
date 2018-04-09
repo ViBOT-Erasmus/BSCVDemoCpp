@@ -5,7 +5,8 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
-
+#include <sstream>
+#include <vector>
 #include "passager.hpp"
 
 ///Class PassagerReader wich allows to read and store data from CSV file
@@ -13,10 +14,11 @@
 class PassagerReader {
  public:
      PassagerReader(const std::string &); 
- private:
+//   private:
      std::string filename;
      void parse_line(std::string);
      int nb_col_csv;
+	 std::vector<Passager> liste_passager;
 
 };
 #define SRC_COMMON_PASSAGER_READER_HPP_
