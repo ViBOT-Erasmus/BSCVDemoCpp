@@ -28,3 +28,19 @@ TEST(TestProcessPassager, Testp_survived) {
     ASSERT_EQ(survived.nb_survived, nb_survived_xls);
     ASSERT_NEAR(survived.percentage_survived, per_sur, 0.001);
 }
+TEST(TestProcessPassager, Testp_hist_embarked) {
+    std::string f_name = "../data/titanic.csv";
+    PassagerReader my_passager_reader(f_name);
+    ProcessPassager my_process_passager(my_passager_reader.liste_passager);
+    int nb_class_hist = 4;
+    std::map<std::string, int> hist = my_process_passager.p_hist_emabarked();
+    int nb_hist = hist.size();
+    ASSERT_EQ(nb_hist, nb_class_hist);
+    int Southampton = 644;
+    int Cherbourg = 168;
+    int Queenstown = 77;
+    ASSERT_EQ(hist["Southampton"], Southampton);
+    ASSERT_EQ(hist["Cherbourg"], Cherbourg);
+    ASSERT_EQ(hist["Queenstown"], Queenstown);
+    ASSERT_EQ(hist[""], 3);
+}
