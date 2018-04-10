@@ -58,7 +58,7 @@ void PassagerReader::parse_line(std::string line) {
                 count++;
                 break;
             case 3:
-                if (cell == "") 
+                if (cell == "")
                     age = -1;
                 else
                     age = atoi(cell.c_str());
