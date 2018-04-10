@@ -44,5 +44,5 @@ TEST(TestPassagerReader, TestConstructorOneParamFileName) {
     ASSERT_STREQ(
             my_passager_reader.liste_passager[5].deck.c_str(),
             chaine_deck.c_str());
-    ASSERT_TRUE(my_passager_reader.liste_passager[5].alone); 
+    ASSERT_TRUE(my_passager_reader.liste_passager[5].alone);
 }
