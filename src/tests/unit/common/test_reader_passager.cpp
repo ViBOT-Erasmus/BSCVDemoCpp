@@ -34,4 +34,15 @@ TEST(TestPassagerReader, TestConstructorOneParamFileName) {
             my_passager_reader.liste_passager[3].deck.c_str(),
             chaine_deck.c_str());
     ASSERT_FALSE(my_passager_reader.liste_passager[3].alone);
+    //  line number 6
+    //  0,3,male,,0,0,8.4583,Q,Third,man,True,,Queenstown,no,True
+    ASSERT_FALSE(my_passager_reader.liste_passager[5].survived);
+    ASSERT_EQ(my_passager_reader.liste_passager[5].pclass, 3);
+    ASSERT_TRUE(my_passager_reader.liste_passager[5].sex);
+    ASSERT_EQ(my_passager_reader.liste_passager[5].age, -1);
+    chaine_deck = "";
+    ASSERT_STREQ(
+            my_passager_reader.liste_passager[5].deck.c_str(),
+            chaine_deck.c_str());
+    ASSERT_TRUE(my_passager_reader.liste_passager[5].alone); 
 }
