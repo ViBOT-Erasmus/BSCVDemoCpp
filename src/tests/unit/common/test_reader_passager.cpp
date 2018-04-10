@@ -11,7 +11,8 @@
 TEST(TestPassagerReader, TestConstructorOneParamFileName) {
 	//  first line in csv file
 	//  0,3,male,22.0,1,0,7.25,S,Third,man,True,,Southampton,no,False
-    std::string f_name = "/home/pi/Documents/Code/BSCVDemoCpp1718/data/titanic.csv";
+    //   std::string f_name = "/home/pi/Documents/Code/BSCVDemoCpp1718/data/titanic.csv";
+    std::string f_name = "../data/titanic.csv";
 	PassagerReader my_passager_reader(f_name);
 	ASSERT_FALSE(my_passager_reader.liste_passager[0].survived);
 	ASSERT_EQ(my_passager_reader.liste_passager[0].pclass, 3);
