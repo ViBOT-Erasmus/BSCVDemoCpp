@@ -10,14 +10,14 @@
 // This function will take two arguments:
 // * The test case name
 // * The test name
-TEST(TestProcessPassager, Testp_mean) {
+TEST(TestProcessPassager, Testp_mean_age) {
     std::string f_name = "../data/titanic.csv";
     PassagerReader my_passager_reader(f_name);
     ProcessPassager my_process_passager(my_passager_reader.liste_passager);
     double val_mean_from_xls = 29.6991176470588;
     ASSERT_NEAR(my_process_passager.p_mean_age(), val_mean_from_xls, 0.2);
 }
-TEST(TestProcessPassager, Testp_average) {
+TEST(TestProcessPassager, Testp_survived) {
     std::string f_name = "../data/titanic.csv";
     PassagerReader my_passager_reader(f_name);
     ProcessPassager my_process_passager(my_passager_reader.liste_passager);
