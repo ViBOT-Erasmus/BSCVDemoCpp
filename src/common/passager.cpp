@@ -9,18 +9,17 @@ Passager::Passager(bool survived,
     int pclass,
     bool sex,
     int age,
-    int slbsp,  
-    int parch, 
+    int slbsp,
+    int parch,
     int fare,
     std::string embarked,
-    std::string type_class,    
+    std::string type_class,
     std::string who,
     bool adult_male,
     std::string deck,
     std::string embark_town,
     bool alive,
-    bool alone){
-
+    bool alone) {
     this->survived = survived;
     this->pclass = pclass;
     this->sex = sex;
@@ -36,5 +35,4 @@ Passager::Passager(bool survived,
     this->embark_town = embark_town;
     this->alive = alive;
     this->alone = alone;
-
 }
