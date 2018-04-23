@@ -14,30 +14,26 @@ int main() {
     std::string f_name = "../data/titanic.csv";
     PassagerReader my_passager_reader(f_name);
     ProcessPassager my_process_passager(my_passager_reader.liste_passager);
-
-	std::cout << "Age moyenne des passagers : " 
-		<< my_process_passager.p_mean_age() << "\n";
-	
-	StatSurvived stat_survived = my_process_passager.p_survived();
-	
-	std::cout << "Nombre de survivant : "
-		<< stat_survived.nb_survived << "\n";
-	std::cout << "Pourcentage de survivant : "
-		<< stat_survived.percentage_survived << "\n";
-
-	std::map<std::string, int> histo = my_process_passager.p_hist_emabarked();
-	std::string clef = "";
-	for (auto const & x : histo) {
-		if (x.first == "") {
-			clef = "No information";
-		} else {
-			clef = x.first;
-		}
-		std::cout << clef
-			<< ":"
-			<< x.second
-			<< "\n";
-	}  //  for all element of the map
+    std::cout << "Age moyenne des passagers : "
+        << my_process_passager.p_mean_age() << "\n";
+    StatSurvived stat_survived = my_process_passager.p_survived();
+    std::cout << "Nombre de survivant : "
+        << stat_survived.nb_survived << "\n";
+    std::cout << "Pourcentage de survivant : "
+        << stat_survived.percentage_survived << "\n";
+    std::map<std::string, int> histo = my_process_passager.p_hist_emabarked();
+    std::string clef = "";
+    for (auto const & x : histo) {
+        if (x.first == "") {
+            clef = "No information";
+        } else {
+            clef = x.first;
+        }
+        std::cout << clef
+            << ":"
+            << x.second
+            << "\n";
+    }  //  for all element of the map
 
     // Point my_point(12, 0);
     // float ar = 1.27;
