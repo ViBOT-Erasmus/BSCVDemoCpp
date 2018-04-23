@@ -1,14 +1,44 @@
 // Copyright 2016 Guillaume Lemaitre, Cedric Lemaitre
 #include <iostream>
+#include <string>
 
 #include "../common/complex.hpp"
 #include "../common/phone.hpp"
 #include "../common/smartphone.hpp"
 #include "../common/point.hpp"
 #include "../common/ex_template.hpp"
-
+#include "../common/passager_reader.hpp"
+#include "../common/process_passager.hpp"
 
 int main() {
+    std::string f_name = "../data/titanic.csv";
+    PassagerReader my_passager_reader(f_name);
+    ProcessPassager my_process_passager(my_passager_reader.liste_passager);
+
+	std::cout << "Age moyenne des passagers : " 
+		<< my_process_passager.p_mean_age() << "\n";
+	
+	StatSurvived stat_survived = my_process_passager.p_survived();
+	
+	std::cout << "Nombre de survivant : "
+		<< stat_survived.nb_survived << "\n";
+	std::cout << "Pourcentage de survivant : "
+		<< stat_survived.percentage_survived << "\n";
+
+	std::map<std::string, int> histo = my_process_passager.p_hist_emabarked();
+	std::string clef = "";
+	for (auto const & x : histo) {
+		if (x.first == "") {
+			clef = "No information";
+		} else {
+			clef = x.first;
+		}
+		std::cout << clef
+			<< ":"
+			<< x.second
+			<< "\n";
+	}  //  for all element of the map
+
     // Point my_point(12, 0);
     // float ar = 1.27;
     // float ai = 2.0;
@@ -32,24 +62,24 @@ int main() {
     // print_data(d);
     // print_data(s);
 
-    double t1_i = 5.0;
-    double t2_j = 6.13;
-    double res = Add_T(t1_i, t2_j);
-    std::cout << res << "\n";
+    // double t1_i = 5.0;
+    // double t2_j = 6.13;
+    // double res = Add_T(t1_i, t2_j);
+    // std::cout << res << "\n";
 
-    float ar = 3.0;
-    float ai = 2.7;
-    float br = 4.0;
-    float bi = 9.6;
+    // float ar = 3.0;
+    // float ai = 2.7;
+    // float br = 4.0;
+    // float bi = 9.6;
 
-    complex a(ar, ai);
-    complex b(br, bi);
-    complex c;
+    // complex a(ar, ai);
+    // complex b(br, bi);
+    // complex c;
 
-    c = Add_T(a, b);
+    // c = Add_T(a, b);
 
-    std::cout << c.get_real() << "\n";
-    std::cout << c.get_imag() << "\n";
+    // std::cout << c.get_real() << "\n";
+    // std::cout << c.get_imag() << "\n";
     /*	phone my_phone;
 
 	my_phone.set_value(150);

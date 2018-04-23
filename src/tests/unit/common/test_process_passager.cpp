@@ -16,6 +16,7 @@ TEST(TestProcessPassager, Testp_mean_age) {
     ProcessPassager my_process_passager(my_passager_reader.liste_passager);
     double val_mean_from_xls = 29.6991176470588;
     ASSERT_NEAR(my_process_passager.p_mean_age(), val_mean_from_xls, 0.2);
+    //  ASSERT_FLOAT_EQ(my_process_passager.p_mean_age(), val_mean_from_xls);
 }
 TEST(TestProcessPassager, Testp_survived) {
     std::string f_name = "../data/titanic.csv";
@@ -27,6 +28,7 @@ TEST(TestProcessPassager, Testp_survived) {
     StatSurvived survived = my_process_passager.p_survived();
     ASSERT_EQ(survived.nb_survived, nb_survived_xls);
     ASSERT_NEAR(survived.percentage_survived, per_sur, 0.001);
+    // ASSERT_FLOAT_EQ(survived.percentage_survived, per_sur);
 }
 TEST(TestProcessPassager, Testp_hist_embarked) {
     std::string f_name = "../data/titanic.csv";
