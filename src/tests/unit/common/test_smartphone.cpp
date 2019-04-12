@@ -14,3 +14,9 @@ TEST(SmartPhoneBuild, DefaultVal) {
     GTEST_ASSERT_EQ(a.get_year(), 0);
     GTEST_ASSERT_EQ(a.get_os(), "");
 }
+
+TEST(SmartPhoneBuild, TestSetxx) {
+    Smartphone a;
+    a.set_value(10);
+    GTEST_ASSERT_EQ(a.get_value(), 10);
+}
