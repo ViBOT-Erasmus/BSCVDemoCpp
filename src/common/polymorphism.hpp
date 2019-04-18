@@ -10,25 +10,34 @@ namespace demobscv {
 namespace polymorph {
 class Vehicule {
  public:
-    void display() const;
+  Vehicule(int);
+  //  Vehicule();
+  virtual void display() const;
+  virtual int nb_wheels() const = 0;
  protected:
     int price_;
 };
 
 class  Car : public Vehicule {
  public:
-    void display() const;
+  Car(int, int);
+  void display() const;
+  int nb_wheels() const;
  private:
     int num_door_;
 };
 
 class  Moto : public Vehicule {
  public:
-    void display() const;
+  Moto(int, int);
+  void display() const;
+  int nb_wheels() const;
  private:
-    int max_speed_;
+  int max_speed_;
 };
 
+
+void introduice(const Vehicule &);
 }  //  namespace polymorph
 }  //  namespace demobscv
 
