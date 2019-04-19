@@ -26,3 +26,9 @@ TEST(SmartPhoneBuild, TestGetSetOS) {
     a.set_os("iOS");
     GTEST_ASSERT_EQ(a.get_os(), "iOS");
 }
+
+TEST(SmartPhoneBuild, TestGetSetYear) {
+    Smartphone a;
+    a.set_year(2000);
+    GTEST_ASSERT_EQ(a.get_year(), 2000);
+}
