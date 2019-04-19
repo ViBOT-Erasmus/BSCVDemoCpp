@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-#include <common/smartphone.hpp>
+#include "../../../common/smartphone.hpp"
 // Create our own test to check the different function of our class
 // This function will take two arguments:
 // * The test case name
