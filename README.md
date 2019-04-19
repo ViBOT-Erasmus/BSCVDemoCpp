@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ViBOT-Erasmus/BSCVDemoCpp1718.svg?branch=master)](https://travis-ci.org/ViBOT-Erasmus/BSCVDemoCpp1718) [![codecov](https://codecov.io/gh/ViBOT-Erasmus/BSCVDemoCpp1718/branch/master/graph/badge.svg)](https://codecov.io/gh/ViBOT-Erasmus/BSCVDemoCpp1718)
+[![Build Status](https://travis-ci.org/ViBOT-Erasmus/BSCVDemoCpp.svg?branch=master)](https://travis-ci.org/ViBOT-Erasmus/BSCVDemoCpp) [![codecov](https://codecov.io/gh/ViBOT-Erasmus/BSCVDemoCpp/branch/master/graph/badge.svg)](https://codecov.io/gh/ViBOT-Erasmus/BSCVDemoCpp)
 
 # Compilation
  Create a build folder :
@@ -19,6 +19,6 @@
 
 * A folder bin will be created at the same level as the build directory.
 
-* When add some add some files to the project involke cmake again :
+* When add some new files to the project involke cmake again :
 
 `cmake ../src` 
