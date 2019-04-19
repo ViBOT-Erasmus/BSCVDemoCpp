@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-#include <common/complex.hpp>
+#include "../../../common/complex.hpp"
 // Include the gtest library
 
 // Create our own test to check the different function of our class
@@ -37,12 +37,35 @@ TEST(ComplexArg, AnglePos) {
     complex b(x, y);
     ASSERT_FLOAT_EQ(b.get_arg(), std::atan(1));
 }
+
+TEST(ComplexArg, Imag_pure_pos) {
+    float x = 0.0;
+    float y = 1.0;
+    complex b(x, y);
+    ASSERT_FLOAT_EQ(b.get_arg(), PI/2);
+}
+
+TEST(ComplexArg, Imag_pure_neg) {
+    float x = 0.0;
+    float y = -1.0;
+    complex b(x, y);
+    ASSERT_FLOAT_EQ(b.get_arg(), -PI/2);
+}
+
+TEST(ComplexArg, complex_null) {
+    float x = 0.0;
+    float y = 0.0;
+    complex b(x, y);
+    ASSERT_FLOAT_EQ(b.get_arg(), 0);
+}
+
 TEST(ComplexArg, AngleNeg) {
     float x = -2;
     float y = 2;
     complex b(x, y);
     ASSERT_FLOAT_EQ(b.get_arg(), std::atan(-1)+PI);
 }
+
 TEST(ComplexClear, Default) {
     float x = -2;
     float y = 2;

@@ -31,11 +31,14 @@ float complex::arg() {
           theta += PI;
         }
     } else {
-        if (imag> 0) {
+        if (imag > 0) {
             theta = PI/2;
         }
         if (imag < 0) {
-            theta = PI/2 + PI;
+            theta = -PI/2;
+        }
+        if (imag == 0) {
+          theta = 0;
         }
     }
     return theta;
