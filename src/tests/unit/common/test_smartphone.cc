@@ -15,8 +15,14 @@ TEST(SmartPhoneBuild, DefaultVal) {
     GTEST_ASSERT_EQ(a.get_os(), "");
 }
 
-TEST(SmartPhoneBuild, TestSetxx) {
+TEST(SmartPhoneBuild, TestSetValue) {
     Smartphone a;
     a.set_value(10);
     GTEST_ASSERT_EQ(a.get_value(), 10);
+}
+
+TEST(SmartPhoneBuild, TestGetSetOS) {
+    Smartphone a;
+    a.set_os("iOS");
+    GTEST_ASSERT_EQ(a.get_os(), "iOS");
 }
