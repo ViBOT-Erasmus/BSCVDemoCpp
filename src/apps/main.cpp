@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 #include "../common/complex.hpp"
 #include "../common/phone.hpp"
@@ -11,22 +13,23 @@
 #include "../common/passager_reader.hpp"
 #include "../common/process_passager.hpp"
 #include "../common/polymorphism.hpp"
+#include "../common/functor.hpp"
 
 int main() {
 
-demobscv::polymorph::Car c(1000, 4);
-demobscv::polymorph::Moto m(1000, 250);
-
-c.display();
-m.display();
-
-introduice(c);
-introduice(m);
-
-demobscv::polymorph::Vehicule * ptr_v(0);
- ptr_v = & c;
- 
- std::cout << "Nb wheels of ptr_v : " << ptr_v->nb_wheels() << std::endl;
+//  demobscv::polymorph::Car c(1000, 4);
+//  demobscv::polymorph::Moto m(1000, 250);
+//  
+//  c.display();
+//  m.display();
+//  
+//  introduice(c);
+//  introduice(m);
+//  
+//  demobscv::polymorph::Vehicule * ptr_v(0);
+//   ptr_v = & c;
+//   
+//   std::cout << "Nb wheels of ptr_v : " << ptr_v->nb_wheels() << std::endl;
 //      std::string f_name = "../data/titanic.csv";
 //      PassagerReader my_passager_reader(f_name);
 //      ProcessPassager my_process_passager(my_passager_reader.liste_passager);
