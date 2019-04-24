@@ -1,7 +1,7 @@
 // "Copyright 2019  Cedric Lemaitre"
 #include <gtest/gtest.h>
 
-#include <common/polymorphism.hpp>
+#include "../../../common/polymorphism.hpp"
 // Create our own test to check the different function of our class
 // This function will take two arguments:
 // * The test case name
