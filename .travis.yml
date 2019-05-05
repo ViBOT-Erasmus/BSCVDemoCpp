@@ -1,11 +1,11 @@
 dist: trusty
-sudo: true
+sudo: true # required to install gtest libraries
 
-addons:
+addons: # install packages
   apt:
     packages:
       - cmake
-      - libgtest-dev
+      - libgtest-dev # installs header files, no libraries installed yet
       - lcov
 
 language: cpp
@@ -14,22 +14,22 @@ language: cpp
     #    - pip install --user cpp-coveralls
 
 install:
-    # - sudo pip install cpplint
-    # - cpplint --recursive src
-    - cd /usr/src/gtest
-    - sudo cmake CMakeLists.txt -DCOVERAGE=1
-    - sudo make
-    - sudo cp *.a /usr/lib
-    - cd $TRAVIS_BUILD_DIR
+    # - sudo pip install cpplint # install cpp linter
+    # - cpplint --recursive src # lint cpp files in src
+    - cd /usr/src/gtest # go to libgtest-dev src files
+    - sudo cmake CMakeLists.txt -DCOVERAGE=1 # generate make files using cmake for cross platform
+    - sudo make # compile libraries
+    - sudo cp *.a /usr/lib # copy generated libraries to user libraries directory for use
+    - cd $TRAVIS_BUILD_DIR # repository directory
     - mkdir build
     - cd build
-    - cmake -DCMAKE_BUILD_TYPE=Debug ../src && make -j && make main_coverage
+    - cmake -DCMAKE_BUILD_TYPE=Debug ../src && make -j && make main_coverage # compile and run from source folder !!project specific
     - cd ../bin
 
-script:
+script: # running tests
     - ./test_all
 
-after_success:
+after_success: # after running scripts
     - cd ${TRAVIS_BUILD_DIR}/build
     - lcov --directory . --capture --output-file coverage.info # capture coverage info
     - lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out system
