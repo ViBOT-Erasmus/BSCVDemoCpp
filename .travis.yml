@@ -14,8 +14,8 @@ language: cpp
     #    - pip install --user cpp-coveralls
 
 install:
-    - sudo pip install cpplint # install cpp linter
-    - cpplint --recursive src # lint cpp files in src
+    # - sudo pip install cpplint # install cpp linter
+    # - cpplint --recursive src # lint cpp files in src
     - cd /usr/src/gtest # go to libgtest-dev src files
     - sudo cmake CMakeLists.txt -DCOVERAGE=1 # generate make files using cmake for cross platform
     - sudo make # compile libraries
