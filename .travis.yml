@@ -5,7 +5,7 @@ addons: # install packages
   apt:
     packages:
       - cmake
-      - libgtest-dev
+      - libgtest-dev # installs header files, no libraries installed yet
       - lcov
 
 language: cpp
