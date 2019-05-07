@@ -1,8 +1,14 @@
-#pragma once
+// Copyright 2019 Arsanios Mickael
+#ifndef FACE2D_H
+#define FACE2D_H
 
 #include <vector>
 #include "point.hpp"
 
+namespace demobscv
+{
+namespace shape2d
+{
 class Face2D
 {
 public:
@@ -42,3 +48,6 @@ public:
 private:
     std::vector<Point> points;
 };
+} // namespace shape2d
+} // namespace demobscv
+#endif /* !FACE2D_H */
