@@ -1,6 +1,7 @@
+// Copyright 2019 Arsanios Mickael
 #include "face2D.hpp"
 
-Face2D::Face2D()
+demobscv::shape2d::Face2D::Face2D()
 {
     points = {Point(0, 0),
               Point(0, 0),
@@ -8,7 +9,7 @@ Face2D::Face2D()
               Point(0, 0)};
 }
 
-Face2D::Face2D(const double &length)
+demobscv::shape2d::Face2D::Face2D(const double &length)
 {
     points = {Point(0, 0),
               Point(0, length),
@@ -16,7 +17,7 @@ Face2D::Face2D(const double &length)
               Point(length, 0)};
 }
 
-Face2D::Face2D(const double &length, const double &width)
+demobscv::shape2d::Face2D::Face2D(const double &length, const double &width)
 {
     points = {Point(0, 0),
               Point(0, length),
@@ -24,6 +25,6 @@ Face2D::Face2D(const double &length, const double &width)
               Point(width, 0)};
 }
 
-Face2D::~Face2D()
+demobscv::shape2d::Face2D::~Face2D()
 {
 }
