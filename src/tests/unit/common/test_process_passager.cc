@@ -3,8 +3,8 @@
 #include <gtest/gtest.h>
 
 #include <string>
-#include <common/passager_reader.hpp>
-#include <common/process_passager.hpp>
+#include "../../../common/passager_reader.hpp"
+#include "../../../common/process_passager.hpp"
 
 // Create our own test to check the different function of our class
 // This function will take two arguments:
@@ -45,4 +45,12 @@ TEST(TestProcessPassager, Testp_hist_embarked) {
     ASSERT_EQ(hist["Cherbourg"], Cherbourg);
     ASSERT_EQ(hist["Queenstown"], Queenstown);
     ASSERT_EQ(hist[""], 3);
+}
+
+TEST(TestProcessPassager, Test_operator_ostream) {
+    Passager my_passager;
+    std::stringstream str;
+    str << my_passager;
+    std::string str_out = str.str();
+    ASSERT_EQ(str_out, "Test\n");
 }
